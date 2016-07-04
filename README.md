@@ -26,8 +26,8 @@ ColorMatrix lumMatrix = new ColorMatrix();
 lumMatrix.setScale(50,50,50,1);
 ```
 ## 2 矩阵变换
-![](/Users/youcyou/Desktop/1.png)
-![](/Users/youcyou/Desktop/2.png)
+![](img/1.png)
+![](img/2.png)
 
 ```java
 /**
