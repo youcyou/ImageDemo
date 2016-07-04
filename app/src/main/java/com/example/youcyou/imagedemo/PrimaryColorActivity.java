@@ -52,7 +52,7 @@ public class PrimaryColorActivity extends Activity implements SeekBar.OnSeekBarC
     public void onProgressChanged(SeekBar seekBar, int progress, boolean fromUser) {
         switch (seekBar.getId()) {
             case R.id.seekbar_hue:
-                mHue = (progress - MID_VALUE )* 1.0F / MID_VALUE * 180;
+                mHue = (progress - MID_VALUE )* 1.0F / MID_VALUE * 180;// 并不固定 为经验值
                 break;
             case R.id.seekbar_saturation:
                 mSaturation = progress * 1.0F /MID_VALUE;

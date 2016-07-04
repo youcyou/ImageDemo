@@ -8,7 +8,7 @@ import android.widget.Button;
 
 public class MainActivity extends AppCompatActivity {
 
-    private Button primaryColorButton;
+    private Button primaryColorButton,colorMatrixButton;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -21,6 +21,14 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 startActivity(new Intent(MainActivity.this, PrimaryColorActivity.class));
+            }
+        });
+
+        colorMatrixButton = (Button) findViewById(R.id.color_matrix);
+        colorMatrixButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                startActivity(new Intent(MainActivity.this, ColorMatrixActivity.class));
             }
         });
 
