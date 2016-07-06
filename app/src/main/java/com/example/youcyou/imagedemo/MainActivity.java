@@ -8,7 +8,7 @@ import android.widget.Button;
 
 public class MainActivity extends AppCompatActivity {
 
-    private Button primaryColorButton,colorMatrixButton;
+    private Button primaryColorButton,colorMatrixButton,pixelsEffectButton;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -29,6 +29,14 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 startActivity(new Intent(MainActivity.this, ColorMatrixActivity.class));
+            }
+        });
+
+        pixelsEffectButton = (Button) findViewById(R.id.pixels_effect);
+        pixelsEffectButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                startActivity(new Intent(MainActivity.this, PixelsEffectActivity.class));
             }
         });
 
